@@ -1,0 +1,30 @@
+footer {
+    padding: .5rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color) ;
+    font-family: var(--font-family);
+    font-size: .8rem;
+    border-top: var(--border);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mention {
+    color: var(--primary-dark);
+    
+}
+.mention:hover{
+    color: var(--primary-color);
+}
+
+.logo-footer img {
+    width: 105px;
+    margin-right: 2rem;
+}
+
+
+.logo-footer img:hover{
+    filter: opacity(0.5) ;
+}

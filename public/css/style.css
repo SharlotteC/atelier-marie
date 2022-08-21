@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+/* ---------------------------------------theme----------------------------------------- */
+
+:root {
+    --primary-color:  #fdfafa;
+    --secondary-color: #060606;
+    --primary-dark: #835b5b;
+    --warning: #8b0a0a;
+    --success: #009432;
+    --font-family: 'oswald', sans-serif;
+    --font-title: 'Cookie', sans-serif;
+    --font-1: 'Pacifico', sans-serif;
+    --box-shadow : rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    --box-shadow-2: rgba(5, 5, 5, 0.25) 0px 15px 60px -12px inset, rgba(8, 8, 8, 0.3) 0px 15px 60px -12px inset;
+    --border-radius: 3px;
+    --border: 2px solid  #fdfafa;;
+}
+
+/* --------------------------------------reste------------------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home_content{
+    display: flex;
+    height: 85vh;
+
+}

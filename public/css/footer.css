@@ -10,6 +10,9 @@ footer {
     align-items: center;
     justify-content: space-between;
 }
+.footer{
+    margin-left: 1.5rem;
+}
 
 .mention {
     color: var(--primary-dark);

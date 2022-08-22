@@ -15,9 +15,6 @@ header img {
     margin-left: 1.5rem;
     transition: .5s;
 }
-header img:hover{
-    filter: opacity(0.5) ;
-}
 .menu  {
     font-size: 1.1rem;
     justify-content: flex-end;

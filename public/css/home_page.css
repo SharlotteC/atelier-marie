@@ -1,8 +1,55 @@
 .home_content{
     display: flex;
+    flex-direction: column;
     width: 100%;
-    height:100vh;
-    background: url(../images/bg-accueil.jpg);
+    height:400vh;
+}
+.home-container {
+    width: 100%;
+    height: 92vh;
+    background: linear-gradient( #35000061,#350000b2), url(../images/bg-accueil.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.logo-home img {
+    width: 12rem;
+    margin-left: -152rem;
+    margin-top: 3rem;
+}
+.home-container p {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-left: -152rem;
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    letter-spacing: 2px;
+}
+.home-container h1{
+    margin-left: -208rem;
+    font-size: 10rem;
+    color: var(--primary-color);
+    font-family: var(--font-title);
+}
+.home-container a {
+    display: block;
+    margin-left: -62rem;
+    margin-top: 4rem;
+}
+
+.separator  {
+    width: 40rem;
+    height: 5px;
+    margin-top: 2rem;
+    border-top: var(--border) ;
+    margin-left: -82rem;
+}
+
+.description {
+    border-top: var(--border);
+    width: 100%;
+    height: 100vh;
+    background: url(../images/bg-description.jpg);
     background-size: cover;
     background-position: center;
 }

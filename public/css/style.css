@@ -8,12 +8,14 @@
     --primary-color:  #fdfafa;
     --secondary-color: #060606;
     --primary-dark: #835b5b;
+    --dark: rgba(0, 0, 0, 0.614);
+    --light: rgba(255, 255, 255, 0.114) ;
     --warning: #8b0a0a;
     --success: #009432;
     --font-family: 'oswald', sans-serif;
     --font-title: 'Cookie', sans-serif;
     --font-1: 'Pacifico', sans-serif;
-    --box-shadow : rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    --box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     --box-shadow-2: rgba(5, 5, 5, 0.25) 0px 15px 60px -12px inset, rgba(8, 8, 8, 0.3) 0px 15px 60px -12px inset;
     --border-radius: 3px;
     --border: 3px solid  #fdfafa;;
@@ -25,6 +27,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--font-family);
 }
 
 /* ----------------------------------------btn------------------------------------------ */
@@ -35,7 +38,7 @@
     background-color: var(--secondary-color);
     color: var(--primary-color);
     border-radius: 3px;
-    padding: .5rem;
+    padding: .7rem;
     box-shadow: var(--box-shadow);
     text-decoration: none;
     transition: .5s;
@@ -60,7 +63,49 @@
     .home-container h1{
         font-size: 15rem !important;
     }
+    .text-description h1 {
+        font-size: 3rem !important;
+    }
+    .text-description{
+        font-size: 1.7rem !important;
+    }
+    .text-benefit-home{
+        width: 88% !important;
+        
+    }
+    .home-benefit{
+        height: 192vh !important;
+    }
+    .text-benefit-home  p{
+        font-size: 1.7rem;
+    }
+    .text-benefit-home h1{
+        font-size: 3rem !important;
+    }
+    .carousel-text{
+    font-size: 1.3rem !important;
+    }
+    .carousel-text h1{
+        padding-bottom: 1rem !important; 
+        font-size: 3rem !important;
+    }
+    .contact-icon img{
+        margin-top: 2rem !important;
+        width: 12rem !important;
+        
+    }
+    .content-home-contact h2 {
+        font-size: 2rem !important;
+    }
+    .content-home-contact h1 {
+        font-size: 5rem;
+        padding: 2rem !important;
+        
+    }
+
 }
+
+
 @media screen and (max-width:1400px){
     .separator{
         margin-left: -89rem !important;

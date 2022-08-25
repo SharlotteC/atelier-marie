@@ -33,7 +33,7 @@ header img {
     list-style: none;
     padding: 0 1.5rem;
     text-decoration: none;
-    transition: .5s;
+    transition: .4s;
 }
 .menu a:hover{
     color: var(--primary-dark);
@@ -45,7 +45,6 @@ header img {
 .logo{
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
     align-items: center;
 }
 

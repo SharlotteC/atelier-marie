@@ -1,0 +1,59 @@
+.benefit-container {
+    background: url(../images/bg-prestation.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+}
+.benefit-content{
+    padding-top: 6rem;
+}
+
+.benefit-text {
+    margin: 0 auto;
+    width: 65%;
+    background: var(--dark);
+    color: var(--primary-color);
+    padding: 3rem;
+    text-align: center;
+}
+.benefit-text h1{
+    padding: 1rem;
+    font-size: 3rem;
+}
+.benefit-text p{
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+}
+.benefit-text a{
+    display: block;
+    width: 7rem;
+    margin: 0 auto;
+}
+.benefit-card{
+    padding: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card-img {
+width: 30% !important;
+background: var(--dark);
+height: auto;
+text-align: center;
+color: var(--primary-color);
+font-size: 1.3rem;
+}
+.card-img img{
+    padding: 2rem;
+    width: 100%;
+}
+.card-img p {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+.text-description a{
+    display: block;
+    width: 7rem;
+    margin: 0 auto;
+}

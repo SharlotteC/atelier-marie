@@ -6,11 +6,21 @@
         <p class="header-p"> 06 36 66 36 67</p>
     </div>
     <div class="menu">
-            <li>ACCUEIL</li>
-            <li>PRESTATION</li>
-            <li>RENDEZ-VOUS</li>
-            <li>CONTACT</li>        
-            <li>COMPTE</li>              
+            <a href="{{ path('home_page') }}"                
+            {% if app.request.pathinfo == path('home_page') %}
+            class= "active"
+            {% endif %}>       
+                ACCUEIL
+            </a>
+            <a href="{{ path('benefit_page') }}"                
+            {% if app.request.pathinfo == path('benefit_page') %}
+            class= "active"
+            {% endif %}>       
+                PRESTATION
+            </a>
+            <a>RENDEZ-VOUS</a>
+            <a>CONTACT</a>        
+            <a>COMPTE</a>              
         </ul>
     </div>
 

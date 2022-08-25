@@ -74,7 +74,7 @@
 }
 .home-benefit{
     width: 100%;
-    height: 216vh;
+    height: 212vh;
     background: url(../images/bg-accueil-presta.jpg);
     background-position: center;
     background-size: cover;
@@ -113,16 +113,16 @@
 }
 .carousel-inner img {
     width: 100%;
-    height: 65vh ;
+    height: 63vh ;
     box-shadow: var(--box-shadow);
 
 }
 .carousel-text{
     background-color: var(--dark);
     color: var(--primary-color);
-    height: 30%;
+    height: 27%;
     text-align: center;
-    padding: 2rem;
+    padding: 1.3rem;
     box-shadow: var(--box-shadow);
     font-size: 1.1rem;
     margin: auto 0;
@@ -132,16 +132,10 @@
     padding-bottom: .8rem; 
     font-size: 2rem;
 }
-.separator2{
-    margin:  0 auto;
-    width: 15rem;
-    border-top: var(--border);
-    padding: .8rem;
-}
 .contact-home{
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 105vh;
     background: linear-gradient( #35000061,#350000b2), url(../images/bg-acceuil-contact.jpg);
     background-size: cover;
     background-position:center;
@@ -149,8 +143,9 @@
     justify-content: flex-end;
 }
 .content-home-contact{
+    margin: 3rem;
     width: 50%;
-    padding: 2rem;
+    padding: 1.3rem;
     background: var(--light);
     color: var(--primary-color);
     text-align: center;
@@ -160,12 +155,12 @@
     padding: 0;
 }
 .content-home-contact h1 {
-    padding: 1rem;
+    padding: .8rem;
     
 }
 .content-home-contact h2 {
     font-size: 1.5rem;
-    padding: .8rem;
+    padding: .5rem;
     
 }
 .contact-icon{
@@ -175,4 +170,12 @@
     margin-top: 1rem;
     width: 8rem;
     padding: 2rem;
+    transition: 0.8s;
+}
+.contact-icon img:hover{
+    transform: scale(1.5);
+    filter: opacity(0.3);
+}
+.contact-icon a{
+    text-decoration: none;
 }

@@ -50,6 +50,13 @@
     transform: scale(1.2);
 }
 
+.separator2{
+    margin:  0 auto;
+    width: 15rem;
+    border-top: var(--border);
+    padding: .8rem;
+}
+
 
 /* ------------------------------------------media quieries----------------------------------------- */
 @media screen and (min-width:1550px){
@@ -74,7 +81,7 @@
         
     }
     .home-benefit{
-        height: 192vh !important;
+        height: 188vh !important;
     }
     .text-benefit-home  p{
         font-size: 1.7rem;
@@ -101,6 +108,9 @@
         font-size: 5rem;
         padding: 2rem !important;
         
+    }
+    .benefit-text {
+        width: 40% !important;
     }
 
 }

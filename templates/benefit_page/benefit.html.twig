@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="{{ asset('css/benefit.css')}}">
+{% endblock stylesheets %}
+
+
+{% block title %}Nos Prestations{% endblock %}
+
+{% block body %}
+    
+    <div class="benefit-container">
+        <div class="benefit-content">
+            <div class="benefit-text">
+                <h1> PRESTATIONS</h1>
+                <div class="separator2"></div>
+                <p>Un vêtement à retoucher ? Nous assurons la plupart de vos retouches. </p>
+                <div class="separator2"></div>
+                <p>L'Atelier de MARIE  vous propose tout son savoir-faire et sa créativité dans le domaine de la couture pour la réalisation de toutes vos retouches. Nous réalisons vos ajustements, remplacements de fermeture, de doublure, de boutons… Confiez-nous vos vêtements ! </p>
+                <a href="/" class="btn-primary" >Rendez-vous</a> 
+            </div>
+        </div>
+        <div class="benefit-card">
+            <div class="card-img">
+                <img src="{{asset('images/img-retouche.jpg')}}" alt="image retouche">
+                <div class="separator2"></div>
+                <p>Nous réalisons des retouches rapides minutieuses sur tous types de textiles.</p>
+                <div class="separator2"></div>
+            </div>
+
+            <div class="card-img">
+                <img src="{{asset('images/img-rideau.jpg')}}" alt="image retouche">
+                <div class="separator2"></div>
+                <p>Nous vous proposons également d’ajuster vos rideaux et voilages. Confiez-nous votre linge de maison !</p>
+                <div class="separator2"></div>
+            </div>
+
+            <div class="card-img">
+                <img src="{{asset('images/clothe.jpg')}}" alt="image retouche">
+                <div class="separator2"></div>
+                <p>Nos compétences nous permettent de remettre en état vos vêtements. Nous vous garantissons un résultat respectant en tout point vos attentes.</p>
+                <div class="separator2"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+{% endblock %}

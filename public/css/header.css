@@ -26,7 +26,8 @@ header img {
     float: right;
     margin-right: 2rem;
 }
-.menu li {
+.menu a {
+    color: var(--primary-color);
     display: inline-block;
     justify-content: flex-end;
     list-style: none;
@@ -34,10 +35,13 @@ header img {
     text-decoration: none;
     transition: .5s;
 }
-.menu li:hover{
+.menu a:hover{
     color: var(--primary-dark);
-
 }
+.active {
+    color: var(--primary-dark)!important;
+}
+
 .logo{
     display: flex;
     flex-direction: row;

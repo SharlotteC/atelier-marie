@@ -18,7 +18,11 @@
             {% endif %}>       
                 PRESTATION
             </a>
-            <a>RENDEZ-VOUS</a>
+            <a href="{{ path('rendez_vous') }}"                
+            {% if app.request.pathinfo == path('rendez_vous') %}
+            class= "active"
+            {% endif %}>RENDEZ-VOUS</a>
+            <a>DEVIS</a>        
             <a>CONTACT</a>        
             <a>COMPTE</a>              
         </ul>

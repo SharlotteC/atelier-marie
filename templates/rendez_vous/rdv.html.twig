@@ -11,7 +11,18 @@
 {% block body %}
 
 <div class="rdv-container">
-    <div class="rdv-info"></div>
+    <div class="rdv-info">
+        <div class="separator2"></div>
+        <h1> Prenez rendez-vous !</h1>
+        <div class="separator2"></div>
+        <div class="form_rdv">
+            {{ form_start(rdv_Form) }}
+            {{ form_rest(rdv_Form) }}
+            <p>*champs obligatoire</p>
+            <button class=" btn-primary rdv-button" type="submit"> Valider </button
+            {{ form_end(rdv_Form) }}
+        </div>
+    </div>
     <div class="rdv-calendar"></div>
 
 </div>

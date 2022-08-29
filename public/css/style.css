@@ -9,7 +9,7 @@
     --secondary-color: #060606;
     --primary-dark: #835b5b;
     --dark: rgba(0, 0, 0, 0.614);
-    --light: rgba(255, 255, 255, 0.114) ;
+    --light: rgba(255, 255, 255, 0.14) ;
     --warning: #8b0a0a;
     --success: #009432;
     --font-family: 'oswald', sans-serif;
@@ -111,6 +111,13 @@
     }
     .benefit-text {
         width: 40% !important;
+    }
+    .rdv-info{
+        margin-top: 5rem !important;
+    }
+    .rdv-info h1{
+        padding: 3rem !important;
+        margin-top: -1.4rem !important;
     }
 
 }

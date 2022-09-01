@@ -1,9 +1,11 @@
 {% extends 'base.html.twig' %}
 
+
 {% block stylesheets %}
 {{ parent() }}
 <link rel="stylesheet" href="{{ asset('css/rdv.css')}}">
 {% endblock stylesheets %}
+
 
 
 {% block title %}Rendez-vous{% endblock %}
@@ -23,8 +25,11 @@
             {{ form_end(rdv_Form) }}
         </div>
     </div>
-    <div class="rdv-calendar"></div>
-
+    <div class="rdv-calendar-content">
+        <div class="rdv-calendar" id="calendrier">
+    
+        </div>
+    </div>
 </div>
 
 {% endblock %}

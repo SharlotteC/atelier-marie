@@ -31,20 +31,3 @@ var basicTimeline = anime.timeline();
     });
 
     //-----------------------------------------Calendar----------------------------------
-
-    window.onload = () => {
-        let calendarElt = document.querySelector('#calendrier')
-
-        let calendar = new FullCalendar.Calendar(calendarElt, {
-            initialView: 'dayGridMonth',
-            locale: 'fr',
-            timeZone: 'Europe/Paris',
-            headerToolbar: {
-                start: 'prev',
-                center: 'title',
-                end: 'next'
-            }
-        })
-
-        calendar.render()
-    }

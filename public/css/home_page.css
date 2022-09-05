@@ -24,10 +24,12 @@
     margin-left: -152rem;
     color: var(--primary-color);
     letter-spacing: 2px;
+    padding: 0;
 }
+
 .home-container h1{
     margin-left: -208rem;
-    font-size: 10rem;
+    font-size: 9rem;
     color: var(--primary-color);
     font-family: var(--font-title);
 }

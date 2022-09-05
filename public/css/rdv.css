@@ -1,22 +1,34 @@
-.rdv-container{
+body{
+    overflow: hidden;
     background: linear-gradient( #35000061,#35000088), url(../images/bg-rdv.jpg);
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+.rdv-container{
+    width: 100%;
+    text-align: center;
+    margin: auto 0;
+    min-height: 100%;
+
+    
+}
+.rdv-content{
+    display: flex;
+    flex-direction: row;
+
 }
 .rdv-info{
-    width: 50%;
+    width: 60%;
     color: var(--primary-color);
     text-align: center;
-    padding: 3rem;
+    padding-top: 4rem;
 }
 .rdv-info h1{
     margin-top: -.5rem;
     padding-bottom: 1.5rem;
-    font-size: 4rem;
+    font-size: 4.5rem;
 }
 .form_rdv  label{
     display: none;
@@ -31,7 +43,7 @@
     font-style: italic;
 }
 
-#userform_lastname, #userform_firstname, #userform_Email {
+#reservation_lastname, #reservation_firstname, #reservation_Email {
     width: 25rem;
     margin-top: 1.5rem;
     padding: .3rem;
@@ -44,23 +56,72 @@
 }
 .rdv-button{
     width: 10rem;
-    margin-left: 0 !important;
-    margin-top: 2.5rem ;
     border: none;
+    margin-bottom: 4rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 3px;
+    padding: .7rem;
+    box-shadow: var(--box-shadow);
+    text-decoration: none;
+    transition: .5s;
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+}
+.rdv-button:hover{
+    color: var(--primary-dark);
+    transform: scale(1.2);
 }
 .rdv-calendar-content{
-    width: 40%;
-    height: 70vh;
+    width:30%;
     background: var(--dark);
-    margin: 1rem 0;
+    height: auto;
+    margin-top: 4rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
 }
 #calendrier{
-    padding: 1rem;
     width:100%;
-    height: 60vh;
     color: var(--primary-color);
     border: none !important;
     box-sizing: none !important;
-    font-size: 1rem;
+    font-size: 1rem; 
 }
-
+.rdv-calendar label{
+    display: none;
+}
+.meeting{
+    font-size: 2.2rem;
+    padding-bottom: 1rem;
+}
+#reservation_rdvDate {
+    margin-bottom: 1rem;
+    background-color: var(--light);
+    border: none;
+    color: var(--primary-color);
+    padding: .8rem;
+    font-size: 1.3rem;
+}
+#reservation_hourDate{
+    margin-bottom: 3rem;
+}
+#reservation_hourDate_hour, #reservation_hourDate_minute{
+    background-color: var(--light);
+    border: none;
+    color: var(--primary-color);
+    padding: .3rem;
+    font-size: 1.3rem;
+    margin: .5rem;
+}
+#reservation_hourDate option{
+    background-color: black;
+}
+.separator3{
+    margin:  0 auto;
+    width: 15rem;
+    border-top: var(--border);
+    
+}

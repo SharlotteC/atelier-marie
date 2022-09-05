@@ -13,23 +13,33 @@
 {% block body %}
 
 <div class="rdv-container">
-    <div class="rdv-info">
-        <div class="separator2"></div>
-        <h1> Prenez rendez-vous !</h1>
-        <div class="separator2"></div>
-        <div class="form_rdv">
-            {{ form_start(rdv_Form) }}
-            {{ form_rest(rdv_Form) }}
-            <p>*champs obligatoire</p>
-            <button class=" btn-primary rdv-button" type="submit"> Valider </button
-            {{ form_end(rdv_Form) }}
+    <div class="rdv-content">
+        <div class="rdv-info">
+            <div class="separator2"></div>
+            <h1> Prenez rendez-vous !</h1>
+            <div class="separator2"></div>
+            <div class="form_rdv">
+                {{ form_start(rdv_form) }}
+                {{ form_row(rdv_form.firstname) }}
+                {{ form_row(rdv_form.lastname) }}
+                {{ form_row(rdv_form.Email) }}
+                <p>*champs obligatoire</p>
+            </div>
+        </div>
+        <div class="rdv-calendar-content">
+            <div  class="rdv-calendar" id="calendrier">
+                <div class="separator2"></div>
+                <p class="meeting"> Séléctionnez une date</p>
+                {{ form_row(rdv_form.rdvDate) }}
+                <p class="meeting">Selctionnez une heure </p>
+                {{ form_row(rdv_form.hourDate) }}  
+                <div class="separator3"></div>
+            </div>
         </div>
     </div>
-    <div class="rdv-calendar-content">
-        <div class="rdv-calendar" id="calendrier">
-    
-        </div>
-    </div>
+
+    <button class=" rdv-button" type="submit"> Valider </button>
+    {{ form_end(rdv_form) }}
 </div>
 
 {% endblock %}

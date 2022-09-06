@@ -43,7 +43,7 @@ body{
     font-style: italic;
 }
 
-#reservation_lastname, #reservation_firstname, #reservation_Email {
+#reservation_lastname, #reservation_firstname, #reservation_email {
     width: 25rem;
     margin-top: 1.5rem;
     padding: .3rem;
@@ -97,7 +97,7 @@ body{
     font-size: 2.2rem;
     padding-bottom: 1rem;
 }
-#reservation_rdvDate {
+#reservation_date {
     margin-bottom: 1rem;
     background-color: var(--light);
     border: none;
@@ -105,10 +105,10 @@ body{
     padding: .8rem;
     font-size: 1.3rem;
 }
-#reservation_hourDate{
+#reservation_time{
     margin-bottom: 3rem;
 }
-#reservation_hourDate_hour, #reservation_hourDate_minute{
+#reservation_time_hour, #reservation_time_minute{
     background-color: var(--light);
     border: none;
     color: var(--primary-color);
@@ -116,7 +116,7 @@ body{
     font-size: 1.3rem;
     margin: .5rem;
 }
-#reservation_hourDate option{
+#reservation_time option{
     background-color: black;
 }
 .separator3{

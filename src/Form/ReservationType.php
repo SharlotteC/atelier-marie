@@ -2,6 +2,7 @@
 
 namespace App\Form;
 
+use App\Entity\Reservation;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
@@ -26,17 +27,17 @@ class ReservationType extends AbstractType
                 'placeholder' => 'Prénom*'
             ]
         ])
-        ->add('Email' , EmailType::class, [
+        ->add('email' , EmailType::class, [
             'attr' => [
                 'placeholder' => 'Email*'
             ]
         ])
-        ->add('rdvDate', DateType::class, array(
+        ->add('date', DateType::class, array(
 
             'widget' => 'single_text',
             'format' => 'yyyy-MM-dd',
         ))
-        ->add('hourDate', TimeType::class, array(
+        ->add('time', TimeType::class, array(
 
             'widget' => 'choice',
             'input' => 'datetime'
@@ -47,6 +48,7 @@ class ReservationType extends AbstractType
     public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
+            
         ]);
     }
 }

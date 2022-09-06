@@ -19,9 +19,10 @@
     --box-shadow-2: rgba(5, 5, 5, 0.25) 0px 15px 60px -12px inset, rgba(8, 8, 8, 0.3) 0px 15px 60px -12px inset;
     --border-radius: 3px;
     --border: 3px solid  #fdfafa;;
+    --text-shadow: 2px 2px 2px black;
 }
 
-/* --------------------------------------resete------------------------------------------ */
+/* --------------------------------------reset------------------------------------------ */
 
 * {
     margin: 0;
@@ -31,6 +32,17 @@
 }
 
 /* ----------------------------------------btn------------------------------------------ */
+
+/* -------------------------------------message  flash -------------------------------*/
+.flash{
+    padding: .5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.flash-success{
+    background-color: var(--primary-dark);
+    color: var(--primary-color);
+}
 
 .btn-primary{
     margin-left: 100rem;

@@ -22,7 +22,7 @@
                 {{ form_start(rdv_form) }}
                 {{ form_row(rdv_form.firstname) }}
                 {{ form_row(rdv_form.lastname) }}
-                {{ form_row(rdv_form.Email) }}
+                {{ form_row(rdv_form.email) }}
                 <p>*champs obligatoire</p>
             </div>
         </div>
@@ -30,9 +30,9 @@
             <div  class="rdv-calendar" id="calendrier">
                 <div class="separator2"></div>
                 <p class="meeting"> Séléctionnez une date</p>
-                {{ form_row(rdv_form.rdvDate) }}
+                {{ form_row(rdv_form.date) }}
                 <p class="meeting">Selctionnez une heure </p>
-                {{ form_row(rdv_form.hourDate) }}  
+                {{ form_row(rdv_form.time) }}  
                 <div class="separator3"></div>
             </div>
         </div>

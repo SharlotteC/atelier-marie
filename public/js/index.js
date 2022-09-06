@@ -30,5 +30,21 @@ var basicTimeline = anime.timeline();
         easing: "easeOutExpo",
     });
 
-    //-----------------------------------------Calendar----------------------------------
+   //------------------------------fonction pour afficher mon texte lettre par lettre user-rdv---------
 
+
+const myText = document.getElementById("myText");
+const txt = myText.dataset.label;
+let i = 0;
+function showLetters() {
+    let timeOut;
+    if (i < txt.length) {
+        myText.innerHTML += `<span>${txt[i]}</span>`;
+        timeOut = setTimeout(showLetters,80)
+        i++
+    }
+    else {
+        clearTimeout(timeOut);
+    }
+}
+showLetters();

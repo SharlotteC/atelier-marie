@@ -15,18 +15,16 @@
     <div class="content-rdv-user">
         <h1>Votre rendez-vous à venir</h1>
         <div class="separator2"></div>
-    {# <p>{{ rdv.lastname }} {{ rdv.firstname }}</p>
-    <p>{{ rdv.email }}</p> #}
-    <p> Le : &nbsp{{ rdv.date | date("d/m/Y", "Europe/Paris")  }}</p>
-    <p> À :  &nbsp {{ rdv.time | format_time}}</p>
-    À notre adresse :   &nbsp 21 Quai Louis Lapicque, 88000 Épinal
-    <div class="separator2"></div>
-    <p> À Bientôt {{rdv.firstname}},</p>
-    <p class="signature"> L'equipe de l'Atelier de Marie </p>
-    
+        <p> Le : &nbsp{{ rdv.date | date("d/m/Y", "Europe/Paris")  }}</p>
+        <p> À :  &nbsp {{ rdv.time | date('H:i')}}</p>
+        À notre adresse :   &nbsp 21 Quai Louis Lapicque, 88000 Épinal
+        <div class="separator2"></div>
+        <p> À Bientôt {{rdv.firstname}},</p>
+        <p class="signature"> L'équipe de l'Atelier de Marie </p>
+        
     </div>
     <div class="msg-rdv">
-        <p id="myText"data-label="Merci pour votre confiance !!"></p>
+        <p id="myText"data-label="Merci pour votre confiance !"></p>
     </div>
 </div>
 

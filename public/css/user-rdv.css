@@ -18,7 +18,7 @@ body{
     color: var(--primary-color);
     margin: 2.5rem 0 0 4rem ;
     font-size: 1.2rem;  
-    padding: 3rem 0 .3rem 3rem;
+    padding: 3rem  3rem .3rem 3rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -44,6 +44,8 @@ body{
     font-size: 7rem;
     color: var(--primary-color);
     text-shadow: var(--text-shadow);
-    margin: 5rem;
+    text-align: center;
+    margin: 4rem;
     
 }
+

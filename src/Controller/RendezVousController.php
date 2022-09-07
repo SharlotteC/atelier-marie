@@ -22,7 +22,7 @@ class RendezVousController extends AbstractController
         $rdvForm = $this->createForm(ReservationType::class, $rdv);
         $rdvForm->handleRequest($request);
 
-        if($rdvForm->isSubmitted() && $rdvForm->isValid()){
+        if($rdvForm->isSubmitted() && $rdvForm->isValid() ){
             dump($rdvForm->getData());
 
             $em->persist($rdv);

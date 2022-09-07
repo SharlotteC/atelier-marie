@@ -22,7 +22,6 @@ class Reservation
                         minMessage: 'Votre prénom doit contenir au minimum 2 caractères',
                         max: 30,
                         maxMessage: 'Votre prénom est trop long'
-
                     )]
     private ?string $firstname = null;
 
@@ -33,11 +32,11 @@ class Reservation
                         minMessage: 'Votre nom doit contenir au minimum 2 caractères',
                         max: 30,
                         maxMessage: 'Votre nom est trop long'
-
                     )]
     private ?string $lastname = null;
 
     #[ORM\Column(length: 255)]
+    #[Assert\Email(message:'Veuillez saisir un Email valide')]
     private ?string $email = null;
 
 
@@ -45,6 +44,10 @@ class Reservation
     private ?\DateTimeInterface $time = null;
 
     #[ORM\Column(type: Types::DATE_MUTABLE)]
+    #[Assert\GreaterThanOrEqual(
+                                'today',
+                                message: 'Vous devez choisir une date valide '
+                                )]
     private ?\DateTimeInterface $date = null;
 
     public function getId(): ?int

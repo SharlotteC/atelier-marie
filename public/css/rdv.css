@@ -20,15 +20,15 @@ body{
 
 }
 .rdv-info{
-    width: 60%;
+    width: 55%;
     color: var(--primary-color);
     text-align: center;
-    padding-top: 4rem;
+    padding-top: 3.5rem;
 }
 .rdv-info h1{
-    margin-top: -.5rem;
-    padding-bottom: 1.5rem;
-    font-size: 4.5rem;
+    margin-top: -1rem;
+    padding-bottom: 1.7rem;
+    font-size: 3.5rem;
 }
 .form_rdv  label{
     display: none;
@@ -45,7 +45,7 @@ body{
 
 #reservation_lastname, #reservation_firstname, #reservation_email {
     width: 25rem;
-    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     padding: .3rem;
     height: 2.5rem;
     font-size: 1.5rem;
@@ -54,10 +54,16 @@ body{
     border: none;
     box-shadow: var(--box-shadow);
 }
+
+.form_rdv  ul {
+    color: var(--primary-color);
+    padding: 0;
+    margin: 0;
+}
 .rdv-button{
     width: 10rem;
     border: none;
-    margin-bottom: 4rem;
+    margin-top: -20rem;
     background-color: var(--secondary-color);
     color: var(--primary-color);
     border-radius: 3px;
@@ -76,7 +82,7 @@ body{
     width:30%;
     background: var(--dark);
     height: auto;
-    margin-top: 4rem;
+    margin: 4rem 0 0 5rem;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -94,7 +100,7 @@ body{
     display: none;
 }
 .meeting{
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     padding-bottom: 1rem;
 }
 #reservation_date {
@@ -103,7 +109,7 @@ body{
     border: none;
     color: var(--primary-color);
     padding: .8rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 #reservation_time{
     margin-bottom: 3rem;

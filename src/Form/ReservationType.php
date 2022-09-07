@@ -36,11 +36,13 @@ class ReservationType extends AbstractType
 
             'widget' => 'single_text',
             'format' => 'yyyy-MM-dd',
+            'days' => range("monday", "friday")
         ))
         ->add('time', TimeType::class, array(
-
             'widget' => 'choice',
-            'input' => 'datetime'
+            'input' => 'datetime',
+            'hours' => range(14, 17),
+            'minutes' => [00]
         ))
     ;
 }

@@ -66,7 +66,7 @@
     margin:  0 auto;
     width: 15rem;
     border-top: var(--border);
-    padding: .8rem;
+    padding-bottom: 2rem;
 }
 
 
@@ -125,17 +125,24 @@
         width: 40% !important;
     }
     .rdv-info{
-        margin-top: 5rem !important;
+        margin-top: 4rem !important;
         margin-bottom: 5rem !important;
     }
     .rdv-info h1{
-        padding: 3rem !important;
-        margin-top: -1.4rem !important;
+        font-size: 5rem !important;
+        padding: 2rem !important;
+        margin-top: -2.5rem !important;
     }
     .rdv-calendar-content{
-        margin-top: 10rem !important;
+        margin: 8rem 0 0 8rem!important;
     }
-
+    .content-rdv-user{
+        margin: 8rem !important;
+    }
+    .msg-rdv{
+        font-size: 9rem !important;
+        margin: 3rem 0 0 0;
+    }
 }
 
 

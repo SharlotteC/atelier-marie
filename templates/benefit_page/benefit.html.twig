@@ -21,31 +21,38 @@
                 <a href="{{ path('rendez_vous') }}" class="btn-primary" >Rendez-vous</a> 
             </div>
         </div>
-        <div class="benefit-card">
-            <div class="card-img">
-                <img src="{{asset('images/img-retouche.jpg')}}" alt="image retouche">
-                <div class="separator2"></div>
-                <p>Nous réalisons des retouches rapides minutieuses sur tous types de textiles.</p>
-                <div class="separator2"></div>
-            </div>
 
-            <div class="card-img">
-                <img src="{{asset('images/img-rideau.jpg')}}" alt="image retouche">
-                <div class="separator2"></div>
-                <p>Nous vous proposons également d’ajuster vos rideaux et voilages. Confiez-nous votre linge de maison !</p>
-                <div class="separator2"></div>
+        <div class="carousel-container2">
+            <div class="content-carousel2">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner2">
+                        <div class="carousel-item active">
+                            <div class="card-img">
+                                <img src="{{asset('images/img-retouche.jpg')}}" alt="image retouche">
+                                <div class="separator3"></div>
+                                <p>Nous réalisons des retouches rapides minutieuses sur tous types de textiles.</p>
+                                <div class="separator3"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-img">
+                                <img src="{{asset('images/img-rideau.jpg')}}" alt="image retouche">
+                                <div class="separator3"></div>
+                                <p>Nous vous proposons également d’ajuster vos rideaux et voilages. Confiez-nous votre linge de maison !</p>
+                                <div class="separator3"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-img">
+                                <img src="{{asset('images/textile.jpg')}}" alt="image retouche">
+                                <div class="separator3"></div>
+                                <p>Nos compétences nous permettent de remettre en état vos vêtements. Nous vous garantissons un résultat respectant en tout point vos attentes.</p>
+                                <div class="separator3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="card-img">
-                <img src="{{asset('images/clothe.jpg')}}" alt="image retouche">
-                <div class="separator2"></div>
-                <p>Nos compétences nous permettent de remettre en état vos vêtements. Nous vous garantissons un résultat respectant en tout point vos attentes.</p>
-                <div class="separator2"></div>
-            </div>
-
         </div>
-
     </div>
-
-
 {% endblock %}

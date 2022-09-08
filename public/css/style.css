@@ -70,6 +70,12 @@
 }
 
 
+.separator3{
+    margin:  0 auto;
+    width: 12rem;
+    border-top: var(--border);
+    padding:.3rem ;
+}
 /* ------------------------------------------media quieries----------------------------------------- */
 @media screen and (min-width:1550px){
     .separator{
@@ -93,7 +99,12 @@
         
     }
     .home-benefit{
-        height: 188vh !important;
+        height: 96vh !important;
+    }
+    .text-benefit-home{
+        width: 58% !important;
+        margin: 4rem 0 0 4rem !important;
+        height: 40rem !important;
     }
     .text-benefit-home  p{
         font-size: 1.7rem;
@@ -101,17 +112,21 @@
     .text-benefit-home h1{
         font-size: 3rem !important;
     }
-    .carousel-text{
-    font-size: 1.3rem !important;
+    .carousel-container{
+        margin-top: 4rem !important;
     }
-    .carousel-text h1{
-        padding-bottom: 1rem !important; 
-        font-size: 3rem !important;
+    .carousel-inner img {
+        height: 40rem !important;
     }
     .contact-icon img{
         margin-top: 2rem !important;
-        width: 12rem !important;
+        width: 6.5rem !important;
         
+    }
+    .content-home-contact{
+    margin: 3rem 6rem 0 0 !important;
+    
+
     }
     .content-home-contact h2 {
         font-size: 2rem !important;
@@ -122,8 +137,22 @@
         
     }
     .benefit-text {
-        width: 40% !important;
+        height: 46rem !important;
     }
+    .benefit-text h1{
+        font-size: 7rem !important;
+    }
+    .benefit-text p{
+        margin-bottom: 4rem !important;
+        font-size: 1.6rem !important;
+    }
+    .card-img {
+        height: 46rem !important;
+        }
+        .card-img img{
+            height: 36rem !important;
+        }
+
     .rdv-info{
         margin-top: 4rem !important;
         margin-bottom: 5rem !important;

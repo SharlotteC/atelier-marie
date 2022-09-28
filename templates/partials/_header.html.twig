@@ -5,9 +5,9 @@
             <img src="{{asset('images/tel.png') }}" alt="logo telephone"> 
         <p class="header-p"> 06 36 66 36 67</p>
     </div>
-    <div class="menu">
-            <a href="{{ path('home_page') }}"                
-            {% if app.request.pathinfo == path('home_page') %}
+    <div class="menu" id="menu">
+        <a href="{{ path('home_page') }}"                
+        {% if app.request.pathinfo == path('home_page') %}
             class= "active"
             {% endif %}>       
                 ACCUEIL
@@ -30,7 +30,6 @@
             {% endif %}>
                 CONTACT
             </a>   
-
             {% if is_granted('ROLE_ADMIN') %}
             <a href="{{ path('logout')}}">DÉCONNEXION</a>
             <a href=" {{ path('admin')}} "  >
@@ -47,15 +46,26 @@
                         {{ app.user.lastname | slice(0, 1)}}
                     </div>
                 </a>
-
                 {% else %}
                     <a href="{{ path('signup') }}">INSCRIPTION</a>   
                     <a href="{{ path('login') }}" > CONNEXION </a> 
             {% endif %} 
-
-        
-    </div>
+        </div>
+        <button class="burger" id="burger">
+            <div class="bar" id="bar"></div>
+        </button>      
 
 </header>
 
-
+<script>
+    function toggleMenu (){
+        const menu = document.getElementById('menu');
+        const burger = document.getElementById('burger');
+        const bar = document.getElementById('bar')
+        burger.addEventListener('click', () =>{
+            menu.classList.toggle('show-menu');
+            bar.classList.toggle('show-bar');
+        });
+    }
+    toggleMenu();
+</script>

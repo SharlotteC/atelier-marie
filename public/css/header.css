@@ -10,6 +10,7 @@ header {
     align-items: center;
     justify-content: space-between;
     border-bottom: var(--border); 
+
 }
 header img {
     width: 3rem;
@@ -64,4 +65,14 @@ header img {
     border-radius: 48%;
     background: var(--primary-dark);
     border: 2px solid var(--primary-color);
+}
+.burger{
+    display: none;
+}
+.show-menu{
+    display: unset;
+}
+.show-bar{
+    width: 0;
+    background: transparent;
 }

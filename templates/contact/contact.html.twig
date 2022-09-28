@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="{{ asset('css/contact.css')}}">
+{% endblock stylesheets %}
+
+{% block title %}Contactez-nous !{% endblock %}
+
+{% block body %}
+
+<div class="contain">
+    <div class="contact-content">
+        <h1>CONTACT</h1>
+        <div class="separator3"></div>
+        <img src="{{asset('images/adresse.png') }}" alt="logo telephone"> 
+        <h2>ADRESSE</h2>
+        <p>21 Quai Louis Lapicque, 88000 Épinal</p>
+        <div class="separator3"></div>
+        <img src="{{asset('images/tel.png') }}" alt="logo telephone"> 
+        <h2>TÉLÉPHONE</h2>
+        <p>06 36 66 36 67</p>
+        <div class="separator3"></div>
+        <img src="{{asset('images/horloge.png') }}" alt="logo telephone"> 
+        <h2>HORAIRES</h2>
+        <p>Lun : 14h00 - 17h00</p>
+        <p>Mar - ven : 9h00-12h00 / 14h00- 17h00</p>
+        <p>Sam : 9h00 - 12h00 / 14h00-17h00</p>
+    </div>
+    <div class="reseaux">
+        <h1>Suivez-nous sur les réseaux</h1>
+        <div class="separator3"></div>
+        <a href="https://www.facebook.com">
+            <img src="{{asset('images/facebook.png') }}" alt="logo telephone"> 
+        </a>
+        <div class="separator3"></div>
+        <a href="https://www.instagram.com">
+            <img src="{{asset('images/insta.png') }}" alt="logo telephone">
+        </a>
+        <div class="separator3"></div>
+        <a href="https://twitter.com">
+            <img src="{{asset('images/twitter.png') }}" alt="logo telephone"> 
+        </a>
+
+    </div>
+</div>
+
+
+
+{% endblock %}

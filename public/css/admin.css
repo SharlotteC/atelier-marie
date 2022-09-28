@@ -1,0 +1,51 @@
+body {
+    background: linear-gradient( #35000061,#35000088), url(../images/bg-rdv.jpg);
+    overflow: visible;
+}
+.contain{
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+    font-size: 1.2rem;
+    justify-content: space-around;
+    text-align: left;
+}
+h1{
+    width: 100%;
+    font-size: 4rem;
+    margin: 2rem;
+    text-align: center;
+    background: var(--dark);
+    padding: 1rem;
+    
+}
+h2{
+    margin-bottom: 1rem;
+}
+.devis-admin{
+    width: 25rem;
+    background: var(--dark);
+    margin: 2rem;
+    padding: 1rem;
+    height: auto;
+    box-shadow: var(--box-shadow);
+
+}
+a{
+    color: var(--primary-dark);
+    transition: .4s;
+}
+a:hover{
+    color: var(--primary-color);
+    scale: 1.5;
+}
+.btn-primary{
+    padding: 0;
+    width: 3rem;
+    margin-left: 22rem;
+}
+.done{
+    opacity: .3;
+}
+.notdone{
+    display: none;
+}

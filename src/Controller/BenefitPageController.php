@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class BenefitPageController extends AbstractController
 {
     #[Route('/benefit', name: 'benefit_page')]
-    public function index(): Response
+    public function benefit(): Response
     {
         return $this->render('benefit_page/benefit.html.twig', [
             'controller_name' => 'BenefitPageController',

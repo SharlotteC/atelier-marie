@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="{{ asset('css/user.css')}}">
+{% endblock stylesheets %}
+
+{% block title %}Mon profil{% endblock %}
+
+{% block body %}
+<div class="user-title">
+    <p id="myText"data-label="Bienvenue sur votre compte {{ app.user.firstname}} ! "></p>
+</div>
+
+<div class="user-container">
+    <div class="user-info">
+        <h1>Vos informations personelles : </h1>
+        <p> Prénom: &nbsp {{app.user.firstname}} </p>
+        <p> Nom: &nbsp{{app.user.lastname}} </p>
+        <p> Email: &nbsp{{app.user.email}} </p>
+        {{ form_start(form) }}
+        {{ form_row(form.newPassword) }}
+        <button class=" btn-password" type="submit"> Sauvegarder </button>
+        {{ form_end(form) }}
+        
+    </div>
+    <div class="user-devis">
+        <h1>Vos demandes de devis :</h1>
+        
+            {% for devis in app.user.deviss %}
+            <div class="cadre">
+                <li>{{devis.title}}</li>
+                <li>{{devis.content}}</li>
+            </div>
+            {% endfor %}
+        
+
+    </div>
+</div>
+
+
+
+{% endblock %}

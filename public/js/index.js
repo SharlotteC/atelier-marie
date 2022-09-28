@@ -48,3 +48,22 @@ function showLetters() {
     }
 }
 showLetters();
+
+//--------------------------- bouton done page admin----------------
+const devisAdminBtn= document.getElementsByClassName('devis-admin-btn');
+console.log(devisAdminBtn);
+
+function clickDone(num){  
+
+    const divAdmin = document.getElementById('div'+num);
+    // divAdmin.classList.add('done');
+
+    if(divAdmin.classList.contains('done')){
+        delete divAdmin;
+    }else{
+        divAdmin.classList.add('done');
+    }
+};
+
+
+

@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Administration{% endblock %}
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="{{ asset('css/admin.css')}}">
+{% endblock stylesheets %}
+
+
+{% block body %}
+    <div class="contain">
+        <h1 id="myText"data-label="Votre liste de devis à traiter: "></h1>
+        {% for devis in deviss %}
+        <div class="devis-admin" id="div{{devis.id}}" >
+            <a href="{{ path('devis_remove', {id: devis.id}) }}" class=" btn-primary devis-admin-btn" id="{{devis.id}}" onclick="clickDone('{{devis.id}}')"> ✔ </a>  
+            <h2>{{devis.title}} </h2>
+            <p>{{devis.firstname | upper}} &nbsp {{devis.lastname | upper}}</p>
+            <p> Demande :  &nbsp {{ devis.content}}</p>
+            <p>
+                Contact:&nbsp <a href="mailto:{{ devis.email }}">{{ devis.email }}</a>
+            </p>
+                
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

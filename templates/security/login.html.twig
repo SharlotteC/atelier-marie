@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="{{ asset('css/signup.css')}}">
+{% endblock stylesheets %}
+
+{% block title %}Connexion{% endblock %}
+
+{% block body %}
+<div class="inscription-container">
+    <div class="inscription-title">
+        <p id="myText"data-label="Identifiez-vous !"></p>
+    </div>
+    <div class="inscription-content">
+        <h1>Connexion</h1>
+        <form action="{{ path('login') }}" method="post">
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input type="text" name="_username" id="email" value="{{username}}" autofocus>
+            </div>
+            <div class="form-row">
+                <label for="password">Password</label>
+                <input type="password" name="_password" id="password" >
+            </div>
+            <div class="form-row">
+                <label for="remember_me" class="check">
+                    <input type="checkbox" name="_remember_me" id="remember_me" >
+                    Se souvenir de moi
+                </label>
+            </div>
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+        
+            {% if error %}
+                <ul class="form-errors">
+                    <li>{{ error.messageKey | trans(error.messageData, 'security') }}</li>
+                </ul>
+            {% endif %}
+
+            <div>
+                <button class=" btn-inscription" type="submit"> Connexion </button>
+                <div>
+                    <small>
+                        <a href="{{ path('signup') }}">
+                            Vous n'avez pas encore de compte ?
+                        </a>
+                    </small>                
+                    <small>
+                        <a href="{{ path('reset-password-request') }}">
+                            Mot de passe oublié ?
+                        </a>
+                    </small>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+
+{% endblock %}

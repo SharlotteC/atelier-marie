@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class HomeController extends AbstractController
 {
     #[Route('/', name: 'home_page')]
-    public function index(): Response
+    public function home(): Response
     {
         
 
@@ -17,4 +17,15 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
+
+    #[Route('mention', name: 'mention')]
+    public function mention(): Response
+    {
+        
+        return $this->render('home/mention.html.twig', [
+            'controller_name' => 'HomeController',
+        ]);
+    }
+
+
 }

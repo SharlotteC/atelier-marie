@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="{{ asset('css/mention.css')}}">
+{% endblock stylesheets %}
+
+{% block title %}Mentions légales{% endblock %}
+{% block body %}
+<div class="mention-content">
+    <h1 id="myText"data-label="Mentions Légales : "></h1>
+
+
+    <div class="mention_legale">
+        <p>Conformément aux dispositions des Articles 6-III  et 19 de la Loi n°2004-575  du 21 juin 2004 pour la
+            Confiance dans l’économie numérique, dite L.C.E.N., il est porté à la connaissance des utilisateurs et
+            visiteurs du site L'Atelier de Marie, les présentes
+            mentions légales. La connexion et la navigation sur le Site par l’Utilisateur implique acceptation intégrale et sans réserve
+            des présentes mentions légales. Ces dernières sont accessibles sur le Site à la rubrique « Mentions légales ».
+        </p>
+        <p>
+            ARTICLE 1 - L'EDITEUR
+            L’édition et la direction de la publication du Site est assurée par Cc-cie, domiciliée 28 rue de la forêt et l'adresse e-mail sharlotte.closson@gmail.com.
+            ci-après l'Editeur.
+        </p>
+        <p>
+            ARTICLE 2 - L'HEBERGEUR
+            L'hébergeur du Site est la société o2switch, dont le siège social est situé au  Chem. des Pardiaux, 63000 Clermont-Ferrand , avec
+            le numéro de téléphone :  04 44 44 60 40
+        </p>
+        <p>
+            ARTICLE 3 - ACCES AU SITE
+            Le Site est accessible en tout endroit, 7j/7, 24h/24 sauf cas de force majeure, interruption
+            programmée ou non et pouvant découlant d’une nécessité de maintenance.
+            En cas de modification, interruption ou suspension du Site, l'Editeur ne saurait être tenu responsable.
+        </p>
+        <p>
+            ARTICLE 4 - COLLECTE DES DONNEES
+            Le site est exempté de déclaration à la Commission Nationale Informatique et Libertés (CNIL) dans la
+            mesure où il ne collecte aucune donnée concernant les utilisateurs.
+            Toute utilisation, reproduction, diffusion, commercialisation, modification de toute ou partie du Site,
+            sans autorisation de l’Editeur est prohibée et pourra entraînée des actions et poursuites judiciaires
+            telles que notamment prévues par le Code de la propriété intellectuelle et le Code civil.
+        </p>
+        
+        <small>
+            En vigueur au 01/10/2022
+        </small>
+    </div>
+</div>
+
+
+
+
+
+
+{% endblock body %}

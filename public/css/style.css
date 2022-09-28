@@ -30,22 +30,25 @@
     box-sizing: border-box;
     font-family: var(--font-family);
 }
-
-/* ----------------------------------------btn------------------------------------------ */
-
-/* -------------------------------------message  flash -------------------------------*/
-.flash{
-    padding: .5rem;
-    text-align: center;
-    font-size: 1.5rem;
-}
-.flash-success{
-    background-color: var(--primary-dark);
+/* ----------------------------------------body----------------------------------------- */
+body {
+    width: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;   
     color: var(--primary-color);
 }
-
+/* ---------------------------------------container--------------------------------------- */
+.contain{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+/* ----------------------------------------btn------------------------------------------ */
 .btn-primary{
-    margin-left: 100rem;
     width: 11rem;
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -61,26 +64,51 @@
     color: var(--primary-dark);
     transform: scale(1.2);
 }
-
+/* -------------------------------------message  flash -------------------------------*/
+.obg{
+    font-style: italic;
+}
+.flash{
+    padding: .5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.flash-success{
+    background-color: var(--primary-dark);
+    color: var(--primary-color);
+}
+.flash-error{
+    background: var(--dark);
+    color: var(--primary-color) ;
+    border: 3px solid var(--warning);
+}
+/* -------------------------------------separator--------------------------------- */
+.separator  {
+    width: 40rem;
+    height: 5px;
+    margin-top: 2rem;
+    border-top: var(--border) ;
+    margin-left: -82rem;
+}
 .separator2{
     margin:  0 auto;
     width: 15rem;
     border-top: var(--border);
     padding-bottom: 2rem;
 }
-
-
 .separator3{
     margin:  0 auto;
     width: 12rem;
     border-top: var(--border);
     padding:.3rem ;
 }
+
 /* ------------------------------------------media quieries----------------------------------------- */
-@media screen and (min-width:1550px){
+
+@media screen and (min-width:1850px){
     .separator{
-        margin-left: -70rem !important;
-        margin-top: 4rem !important;
+        margin-left: -70rem ;
+        margin-top: 4rem;
     }
     .home-container a {
         margin-left: -50rem !important;
@@ -88,6 +116,110 @@
     .home-container h1{
         font-size: 15rem !important;
     }
+    .text-description{
+        font-size: 1.8rem !important;
+    }
+    .text-benefit-home{
+        height: 40rem !important;
+        margin: 4.5rem 0 0 6rem !important;
+        font-size: 1.7rem !important;
+        padding: 3rem;
+    }
+    .content-carousel{
+        margin-top: 4.5rem !important;
+        height: 40rem !important;
+    }
+    .carousel-inner img {
+        height: 40rem !important;
+    }
+    .text-benefit-home h1 {
+        font-size: 3rem !important;
+    }
+    .benefit-text {
+        height: 46rem !important;
+    }
+    .benefit-text h1{
+        font-size: 7rem !important;
+    }
+    .benefit-text p{
+        margin-bottom: 4rem !important;
+        font-size: 1.6rem !important;
+    }
+    .card-img {
+        height: 46rem !important;
+    }
+    .card-img img{
+        height: 36rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    .carousel-container2{
+        width:29% !important;
+    }
+    .msg-devis{
+        font-size: 9rem !important;
+        margin: 3rem 0 0 0;
+    }
+    .devis_content h1{
+        margin-top: 8rem !important;
+        font-size: 8rem !important;
+    }
+    .devis_content h2{
+        font-size: 4rem;
+    }
+    .form-devis-content h1{
+        margin-top: 6rem !important;
+        font-size: 3.5rem !important;
+    }
+    .contact-content{
+        margin: 3.5rem 1rem 1rem 7.7rem !important;
+        padding: 3rem !important;
+    }
+    .contact-content h1{
+        font-size: 4rem;
+    }
+    .contact-content h2{
+        font-size: 1.2rem;
+    }
+    .contact-content img{
+        width: 4rem !important;
+        padding: .7rem !important;
+    }
+    .reseaux{
+        margin: 3.5rem 1rem 1rem 7.7rem !important;
+        padding: 3rem !important;
+    }
+    .reseaux h1{
+        font-size: 4rem !important;
+        padding: 0.5rem !important;
+    }
+    .reseaux img {
+        width: 7rem !important;
+        margin: 1.5rem !important;
+    }
+    .inscription-container{
+        margin-top: 6rem !important;
+    }
+    .reset-content{
+        margin: 12rem auto !important;
+    }
+    .mention_legale{
+        margin: 4.5rem 3rem  0 0 !important;
+        width: 50% !important;
+        font-size: 1.4rem !important;
+    }
+    .mention-content h1 {
+        margin-top: 15rem !important;
+        width: 45% !important;
+        font-size: 8rem !important;
+    }
+}
+
+/* @media screen and (max-width:1600px){
+    .separator{
+        margin-left: -70rem !important;
+        margin-top: 4rem !important;
+    }
+
     .text-description h1 {
         font-size: 3rem !important;
     }
@@ -125,8 +257,6 @@
     }
     .content-home-contact{
     margin: 3rem 6rem 0 0 !important;
-    
-
     }
     .content-home-contact h2 {
         font-size: 2rem !important;
@@ -134,7 +264,6 @@
     .content-home-contact h1 {
         font-size: 5rem;
         padding: 2rem !important;
-        
     }
     .benefit-text {
         height: 46rem !important;
@@ -148,57 +277,109 @@
     }
     .card-img {
         height: 46rem !important;
-        }
-        .card-img img{
-            height: 36rem !important;
-        }
-
-    .rdv-info{
-        margin-top: 4rem !important;
-        margin-bottom: 5rem !important;
     }
-    .rdv-info h1{
-        font-size: 5rem !important;
-        padding: 2rem !important;
-        margin-top: -2.5rem !important;
+    .card-img img{
+        height: 36rem !important;
+        margin-bottom: 1.5rem !important;
     }
-    .rdv-calendar-content{
-        margin: 8rem 0 0 8rem!important;
+    .carousel-container2{
+        width:29% !important;
     }
-    .content-rdv-user{
-        margin: 8rem !important;
-    }
-    .msg-rdv{
+    .msg-devis{
         font-size: 9rem !important;
         margin: 3rem 0 0 0;
     }
+    .devis_content h1{
+        margin-top: 8rem !important;
+        font-size: 8rem !important;
+    }
+    .devis_content h2{
+        font-size: 4rem;
+    }
+    .form-devis-content h1{
+        margin-top: 7rem !important;
+    }
+    .contact-content{
+        margin: 3.5rem 1rem 1rem 7.7rem !important;
+        padding: 3rem !important;
+    }
+    .contact-content h1{
+        font-size: 4rem;
+    }
+    .contact-content h2{
+        font-size: 1.2rem;
+    }
+    .contact-content img{
+        width: 4rem !important;
+        padding: .7rem !important;
+    }
+    .reseaux{
+        margin: 3.5rem 1rem 1rem 7.7rem !important;
+        padding: 3rem !important;
+    }
+    .reseaux h1{
+        font-size: 4rem !important;
+        padding: 0.5rem !important;
+    }
+    .reseaux img {
+        width: 7rem !important;
+        margin: 1.5rem !important;
+    }
+    .inscription-container{
+        margin-top: 6rem !important;
+    }
+    .reset-content{
+        margin: 12rem auto !important;
+    }
+    .mention_legale{
+        margin: 6rem 0 0 0 !important;
+        width: 50% !important;
+    }
+    .mention-content h1 {
+        width: 45% !important;
+        font-size: 8rem !important;
+    }
 }
 
-
-@media screen and (max-width:1400px){
+@media screen and (max-width:1550px){
     .separator{
-        margin-left: -89rem !important;
+        margin-left: -84rem !important;
         margin-top: 3rem !important;
     }
     .home-container a {
-        margin-left: -68rem !important;
+        margin-left: -65rem !important;
     }
-    @media screen and (max-width:1220px){}
+
+@media screen and (min-width:1220px){}
     .separator{
         margin-left: -93rem !important;
     }
     .home-container a {
         margin-left: -72rem !important;
     }
-}
-
-
-@media screen and (max-width:1200px){
+} */
+/* @media screen and (max-width:1200px){
     .separator{
         margin-left: -98rem !important;
     }
     .home-container a{
         margin-left: -78rem !important;
     }
-
-}
+} */
+/* @media screen and  (max-width: 800px){
+    .logo-home img {
+        width: 40rem !important;
+        margin-top: 15rem !important;
+    }
+    .home-container p {
+        font-size: 1.8rem !important;
+        margin-top: 8rem !important;
+    }
+    .home-container h1{
+        padding: 8rem  0 !important;
+        font-size: 10rem !important;
+    }
+    .home-container a {
+        margin-top: 12rem !important;
+    }
+} */

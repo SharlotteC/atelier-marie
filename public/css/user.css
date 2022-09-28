@@ -1,0 +1,81 @@
+body{
+    overflow: hidden;
+    background: linear-gradient( #26010161,#1e030388), url(../images/bg-user.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    color: var(--primary-color);
+    
+}
+.user-title{
+    font-size: 5rem;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 2rem;
+}
+.user-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+}
+.user-container h1{
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.user-info{
+    width: 37%;
+    background: var(--light);
+    margin-left: 8rem;
+    padding: 1rem;
+}
+.user-info p{
+    font-size: 1.3rem;
+}
+.user-info label{
+    display: none;
+}
+.btn-password{
+    width: 8rem;
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 3px;
+    padding: .7rem;
+    box-shadow: var(--box-shadow);
+    text-decoration: none;
+    transition: .5s;
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+}
+.btn-password:hover{
+    color: var(--primary-dark);
+    transform: scale(1.2);
+}
+#user_newPassword{
+    width: 25rem;
+    margin-bottom: 1.5rem;
+    padding: .3rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    background-color: var(--light);
+    color: var(--primary-color);
+    border: none;
+    
+}
+.user-devis{
+    background: var(--light);
+    margin-right: 8rem;
+    width: 37%;
+    padding: 1rem;
+    align-items: center;
+}
+.cadre{
+    font-size: 1.3rem;
+    background-color: var(--dark);
+    list-style: none;
+    margin-bottom: 1.5rem;
+    padding: .5rem 1rem ;
+}
+

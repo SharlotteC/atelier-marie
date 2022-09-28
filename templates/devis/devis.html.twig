@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="{{ asset('css/devis.css')}}">
+{% endblock stylesheets %}
+
+
+
+{% block title %}Devis{% endblock %}
+
+{% block body %}
+
+<div class="contain">
+    <div class="devis_content">
+        <h1 id="myText"data-label="Un devis à faire ?"></h1>
+        <div class="separator3"></div>
+        <h2> Remplissez notre formulaire </h2>
+    </div>
+    <div class="form_devis">
+        <div class="form-devis-content">
+            <h1> Demandez un devis !</h1>
+            {{ form_start(devisForm) }}
+            {{ form_widget(devisForm.firstname, {'attr':{'value':app.user ? app.user.firstname : '' }} ) }} 
+            {{ form_widget(devisForm.lastname, {'attr':{'value':app.user ? app.user.lastname : '' }} ) }}
+            {{ form_widget(devisForm.email, {'attr':{'value':app.user ? app.user.email : '' }} ) }}
+            {{ form_row(devisForm.title) }}
+            {{ form_row(devisForm.content) }}
+            <p class="obg">*champs obligatoire</p>
+            <button class=" btn-devis" type="submit"> Valider </button>
+            {{ form_end(devisForm) }}
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,45 @@
+body{
+    background: linear-gradient( #35000061,#35000088), url(../images/bg-userRdv.jpg);
+    align-items: center;
+}
+.devis-user-container{
+    display: flex;
+    flex-direction: row;
+}
+.content-devis-user{
+    background-color: var(--dark);
+    width: 36rem;
+    color: var(--primary-color);
+    margin: 2.5rem 0 0 4rem ;
+    font-size: 1.2rem;  
+    padding: 3rem  3rem .3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+.content-devis-user h1{
+    font-size: 2.7rem;
+    margin: 0 auto;
+
+}
+.signature{
+    margin: 2rem 0rem 0rem 17rem;
+    font-size: 1.1rem;
+    font-style: italic;
+
+}
+.separator2{
+    margin-top: 2rem;
+}
+
+.msg-devis{
+    width: 50%;
+    font-size: 7rem;
+    color: var(--primary-color);
+    text-shadow: var(--text-shadow);
+    text-align: center;
+    margin: 4rem;
+    
+}
+

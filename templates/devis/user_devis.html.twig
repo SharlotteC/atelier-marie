@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="{{ asset('css/user_devis.css')}}">
+{% endblock stylesheets %}
+
+
+
+{% block title %}Votre devis{% endblock %}
+
+{% block body %}
+<div class="devis-user-container">
+    <div class="content-devis-user">
+        <h1>Récapitulatif de votre devis</h1>
+        <div class="separator2"></div>
+        <p> Titre de votre demande : &nbsp{{ devis.title }}</p>
+        <p> Description de votre demande :  &nbsp {{ devis.content }}</p>
+        <div class="separator2"></div>
+        <p> À Bientôt {{devis.firstname | upper}},</p>
+        <p class="signature"> L'équipe de l'Atelier de Marie </p>
+    </div>
+    <div class="msg-devis">
+        <p id="myText"data-label="Merci pour votre confiance !"></p>
+    </div>
+</div>
+
+
+
+{% endblock %}

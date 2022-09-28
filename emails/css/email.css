@@ -1,0 +1,13 @@
+html {
+    font-family: 'open sans', sans-serif;
+    color: black;
+}
+a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    margin-top: 20px;
+    background:  #835b5b;
+    border-radius: 3px;
+}

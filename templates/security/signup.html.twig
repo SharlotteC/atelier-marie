@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="{{ asset('css/signup.css')}}">
+{% endblock stylesheets %}
+
+{% block title %}Inscription{% endblock %}
+
+{% block body %}
+<div class="inscription-container">
+    <div class="inscription-title">
+            <p id="myText"data-label="Inscrivez-vous ! "></p>
+    </div>
+    <div class="inscription-content">
+        <h1>Créer un compte</h1>
+        {{ form_start(form) }}
+        {{ form_row(form.firstname) }}
+        {{ form_row(form.lastname) }}
+        {{ form_row(form.email) }}
+        {{ form_row(form.password) }}
+        <p class="obg">*champs obligatoire</p>
+        <button class=" btn-inscription" type="submit"> Valider </button>
+        <small>
+            <a href="{{ path('login')}}">
+                Vous avez déjà un compte ? 
+            </a>
+        </small>
+        {{ form_end(form) }}
+    </div>
+</div>
+
+
+</div>
+{% endblock %}

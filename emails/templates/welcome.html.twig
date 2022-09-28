@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    {% apply inline_css(source( '@email_css/welcome.css' )) %}
+        <h1>Bienvenue {{username}} sur le site de  l'atelier de Marie !</h1>
+        <p>Vous pouvez dés à présent vous connecter sur notre site et trouver vos informations personelles.</p>
+        <a href="{{ url('login') }}">Connectez-vous!</a>
+    {% endapply %}
+</body>
+</html>

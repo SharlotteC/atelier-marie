@@ -1,5 +1,7 @@
 body{
     background: linear-gradient( #4d161656,#3a1a1a88), url(../images/bg-rdv.jpg);
+    background-size: cover !important;
+    background-repeat: repeat !important;
 }
 .contact-content{
     margin: 1.9rem 1rem 1rem 6.5rem;

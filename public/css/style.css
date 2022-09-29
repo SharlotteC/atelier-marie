@@ -102,7 +102,6 @@ body {
     border-top: var(--border);
     padding:.3rem ;
 }
-
 /* ------------------------------------------media quieries----------------------------------------- */
 
 @media screen and (min-width:1650px){
@@ -214,148 +213,186 @@ body {
     }
 }
 
-    @media screen and (max-width:1450px){
-        .separator{
-            margin-left: -86rem !important;
-        }
+@media screen and (max-width:1450px){
+    .separator{
+        margin-left: -86rem !important;
     }
-    @media screen and (max-width:1330px){
-        .separator{
-            margin-left: -89rem !important;
-        }
-        .home-container a {
-            margin-left: -67rem !important;
-        }
+}
+
+@media screen and (max-width:1330px){
+    .separator{
+        margin-left: -89rem !important;
     }
-    @media screen and (max-width:1260px){
-        .separator{
-            margin-left: -91rem !important;
-        }
-        .home-container a {
+    .home-container a {
+        margin-left: -67rem !important;
+    }
+}
+    
+@media screen and (max-width:1260px){
+    .separator{
+        margin-left: -91rem !important;
+    }
+    .home-container a {
             margin-left: -69rem !important;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .separator{
+        margin-left: -93rem !important;
+    }
+    .home-container a {
+        margin-left: -71rem !important;
+    }
+    .mention-content h1{
+            font-size: 5rem !important;
+    }
+        .mention_legale{
+            margin: 1rem ;
+            width: 65% !important;
         }
     }
-    @media screen and (max-width:1200px){
-        .separator{
-            margin-left: -93rem !important;
-        }
-        .home-container a {
-            margin-left: -71rem !important;
-        }
+
+@media screen and (max-width:1100px){
+    .separator{
+        margin-left: -98rem !important;
     }
-    @media screen and (max-width:1100px){
-        .separator{
-            margin-left: -98rem !important;
-        }
-        .home-container a {
-            margin-left: -76rem !important;
-        }
+    .home-container a {
+        margin-left: -76rem !important;
     }
-    @media screen and (max-width:910px){
-        .separator{
-            margin-left: -101rem !important;
-        }
-        .home-container a {
-            margin-left: -79rem !important;
-        }
-        header img {
-            width: 2rem !important;
-            margin-left: .3rem !important;
-        }
-        .header-p{
-            font-size: .9rem !important;
-        }
-        .menu  {
-            display: none;
-            width:100%!important;
-            height: 30vh !important;
-            margin: 0 !important;
-            right: 0;
-            padding: 1rem;
-            background: var(--secondary-color) !important;
-            position: absolute !important;
-            text-align: left !important;
-            font-size: 1rem !important;
-            top: 3.5rem !important;
-            z-index: 1 !important;
-            transition:all .5s ease-in-out
-        }
-        .menu a {
-            width: 0% !important;
-            display: block !important;
-            padding-bottom: .4rem !important;
-            transition: all ease-in-out .4s !important;
-        }
-        .menu a:hover{
-            letter-spacing: 5px !important;
-        }
-        .burger{
-            display: unset !important;
-            padding: 0;
-            width: 4.5rem;
-            height: 4rem;
-            border: none;
-            background: transparent;
-            cursor: pointer;
-        }
-        .bar{
-            display: block;
-            width: 2rem;
-            height: 4px;
-            background: var(--primary-color);
-            border-radius: 3px;
-            margin: .4rem !important;
-        }
-        .bar::before, .bar::after {
-            display: block;
-            content: "";
-            width: 2rem ;
-            height: 4px;
-            position: absolute !important;
-            background: var(--primary-color);
-            border-radius: 3px;
-            transition: all .3s ease-in-out;
-        }
-        .bar::before {
-            transform: translateY(10px);
-        }
-        .show-bar.bar::before {
-            transform:rotate(45deg) !important;
-        }
-        .bar::after {
-            transform: translateY(-10px);
-        }
-        .show-bar.bar::after {
-            transform:rotate(-45deg) !important;
-        }
+    .mention-content{
+        flex-direction: column !important;
+        height: 100vh !important;
+        padding-bottom: 2rem !important;
     }
-    @media screen and (max-width:800px){
-        .home-container h1{
-            font-size: 7rem !important;
-        }
-        .separator{
-            margin-left: -105rem !important ;
-            margin-top: 4rem;
-        }
-        .home-container a {
-            margin-left: -85rem !important;
-        } 
-        .home-benefit{
-            flex-direction: column !important;
-            height: auto !important;
-        }
-        .text-benefit-home{
-            width: 80% !important;
-            height:36rem !important;
-            margin: 0 auto !important;
-            font-size: 1.1rem !important;
-            padding: 3rem;
-        }
-        .carousel-container{
-            margin: 2rem auto !important;
-            width:60% !important;
-            margin-bottom: 5rem !important;
-        }
+    .mention-content h1{
+        font-size: 4rem !important;
+        width: 80% !important;
+        margin: 1rem auto !important;
+    }
+    .mention_legale{
+        width: 90% !important;
+        margin: 1rem auto !important;
+    }
+}
+@media screen and (max-width:910px){
+    .separator{
+        margin-left: -101rem !important;
+    }
+    .home-container a {
+        margin-left: -79rem !important;
+    }
+    header img {
+        width: 2rem !important;
+        margin-left: .3rem !important;
+    }
+    .header-p{
+        font-size: .9rem !important;
+    }
+    .menu  {
+        display: none;
+        width:100%!important;
+        height: 30vh !important;
+        margin: 0 !important;
+        right: 0;
+        padding: 1rem;
+        background: var(--secondary-color) !important;
+        position: absolute !important;
+        text-align: left !important;
+        font-size: 1rem !important;
+        top: 3.5rem !important;
+        z-index: 1 !important;
+        transition:all .5s ease-in-out
+    }
+    .menu a {
+        width: 0% !important;
+        display: block !important;
+        padding-bottom: .4rem !important;
+        transition: all ease-in-out .4s !important;
+    }
+    .menu a:hover{
+        letter-spacing: 5px !important;
+    }
+    .burger{
+        display: unset !important;
+        padding: 0;
+        width: 4.5rem;
+        height: 4rem;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+    .bar{
+        display: block;
+        width: 2rem;
+        height: 4px;
+        background: var(--primary-color);
+        border-radius: 3px;
+        margin: .4rem !important;
+    }
+    .bar::before, .bar::after {
+        display: block;
+        content: "";
+        width: 2rem ;
+        height: 4px;
+        position: absolute !important;
+        background: var(--primary-color);
+        border-radius: 3px;
+        transition: all .3s ease-in-out;
+    }
+    .bar::before {
+        transform: translateY(10px);
+    }
+    .show-bar.bar::before {
+        transform:rotate(45deg) !important;
+    }
+    .bar::after {
+        transform: translateY(-10px);
+    }
+    .show-bar.bar::after {
+        transform:rotate(-45deg) !important;
+    }
+    .mention-content h1{
+        font-size: 3rem !important;
+        width: 90% !important;
+        margin: 1rem auto !important;
+    }
+    .mention_legale{
+        margin: 1rem auto !important;
+        width: 90% !important;
+    }
+    .mention-content{
+        height: auto !important;
+    }
+}
+
+@media screen and (max-width:800px){
+    .home-container h1{
+        font-size: 7rem !important;
+    }
+    .separator{
+        margin-left: -105rem !important ;
+        margin-top: 4rem;
+    }
+    .home-container a {
+        margin-left: -85rem !important;
+    } 
+    .home-benefit{
+        flex-direction: column !important;
+        height: auto !important;
+    }
+    .text-benefit-home{
+        width: 80% !important;
+        height:36rem !important;
+        margin: 0 auto !important;
+        font-size: 1.1rem !important;
+        padding: 3rem;
+    }
+    .carousel-container{
+        margin: 2rem auto !important;
+        width:60% !important;
+        margin-bottom: 5rem !important;
+    }
         .content-carousel{
             margin-left: 0 !important;
         }
@@ -364,12 +401,13 @@ body {
         }
         body{
             overflow: visible !important;
+            height: auto !important;
+            padding-bottom: 1rem;
         }
         .contain {
             display: flex !important;
             flex-direction: column !important;
             height: auto !important;
-            padding-bottom: 6rem !important;
         }
         .benefit-content{
             margin: 0 auto !important;
@@ -379,6 +417,9 @@ body {
             width:50% !important;
             margin: 0  auto!important;
         }
+        .card-img {
+            margin-bottom: 1rem !important;
+            }
         .devis_content{
             margin:  0 auto !important;
             width: 80% !important;
@@ -397,13 +438,17 @@ body {
             margin-bottom: 5rem !important;
         }
         .contact-content, .reseaux{
-            margin: 1.5rem auto !important;
+            margin: 1rem auto !important;
             width: 80% !important;
             height: auto !important;
+        }
+        .contact-content{
+            margin-top: 2rem !important;
         }
         
         .inscription-container{
             flex-direction: column !important;
+            height: 100vh!important;
         }
         .inscription-title{
             width: 90% !important;
@@ -411,7 +456,7 @@ body {
             margin: 0 auto !important;
         }
         #myText{
-            margin: 1.5rem !important;
+            margin: 0 !important;
         }
         .inscription-content{
             width: 80% !important;
@@ -419,10 +464,267 @@ body {
             height: auto !important;
         }
         .contain{
+            padding-bottom: 3rem !important;
+        }
+        .devis-admin{
+            width: 60% !important;
+            margin: 1rem auto !important;
+        
+        }
+        .user-container{
+            flex-direction:column !important;
+            justify-content:space-between ;
+            padding-bottom: 4rem !important;
+        }
+        .user-title{
+            font-size: 3rem !important;
+            padding: 0 !important;
+        }
+        .user-info, .user-devis{
+            width: 60% !important;
+            margin: 1.5rem auto !important;
+        }
+        .devis-user-container{
+            flex-direction:column !important;
+            padding-top: 4rem !important;
+            height: auto !important;
+        }
+        .content-devis-user{
+            width: 80% !important;
+            color: var(--primary-color);
+            margin: 0 auto !important;
+        }
+        .msg-devis{
+            width: 90% !important;
+            font-size: 4rem !important;
+            margin: 2rem !important;
+        }
+    }
+    @media screen and (max-width:650px){
+        .home_content{
+            height: auto !important;
+            padding-bottom: 3rem !important;
+        }
+        .home-container {
+            height: auto !important;
+            padding-bottom: 12rem !important;
+        }
+        .home-container h1{
+            font-size: 3.7rem !important;
+            margin-left: -207rem !important;
+            padding-top: 4rem !important;
+        }
+        .separator{
+            width: 12rem !important;
+            margin-left: -104rem !important ;
+            margin-top: 2rem;
+        }
+        .home-container a {
+            margin-left: -97rem !important;
+        } 
+        .home-container p {
+            font-size: 1rem !important;
+            margin-left: -150rem !important;
+        }
+        .description {
+            height: auto !important;
+        }
+        .text-description{
+            margin: 2rem auto !important;
+            width: 90% !important;
+            padding: 1rem !important;
+            font-size: 1.4rem !important;
+            height:auto !important;
+        } 
+        .home-benefit{
+            height: auto !important;
+            padding-top: 2rem !important;
+        }
+        .text-benefit-home{
+            width: 90% !important;
+            height:auto !important;
+            font-size: 1.2rem !important;
+            padding: 1rem !important;
+        }
+        .text-benefit-home h1, p{
+            padding-bottom: 1rem !important;
+        }
+        .carousel-container{
+            margin: 2rem auto !important;
+            width:90% !important;
+            margin-bottom: 2rem !important;
+        }
+        .content-carousel{
+            margin-left: 0 !important;
+        }
+        .carousel-inner img {
+            height: 50vh !important;
+        }
+        .benefit-content{
+            margin: 0 auto !important;
+            width: 90% !important;
+        }
+        .benefit-text h1{
+            font-size: 2rem !important;
+        }
+        .benefit-text {
+            padding: 1rem !important;
+            height: auto !important;
+        }
+        .benefit-text p{
+            font-size: 1.2rem !important;
+        }
+        .carousel-container2{
+            width:90% !important;
+            margin: 0  auto!important;
+            height: auto !important;
+        }
+        .card-img {
+            margin-bottom: 3rem !important;
+            height: 68vh !important;
+            }
+        .devis_content{
+            margin:  0 auto !important;
+            width: 100% !important;
+            padding-top:1rem  !important;
+            height: auto !important;
+        }
+        .devis_content h1{
+            margin: 0 !important;
+            font-size: 3rem !important;
+        }
+        .devis_content h2{
+            font-size: 1.7rem !important;
+            margin-bottom: 3rem !important;
+        }
+        .form_devis{
+            margin:  0 auto !important;
+            width: 90% !important;
+            padding: 1rem;
+            height: auto !important;
+            margin-bottom: 3rem !important;
+        }
+        #devis_lastname, #devis_firstname, #devis_email, #devis_title{
+            width: 100% !important;
+            margin-bottom: 1rem !important;
+            height: 2.1rem !important;
+            font-size: 1.2rem !important;
+        }
+        #devis_content{
+            width: 100% !important;
+            height: 9rem !important;
+            background-color: var(--light);
+            border: none;
+            color: var(--primary-color);
+            padding: .8rem;
+            font-size: 1.2rem !important;
+        }
+        .btn-devis{
+            margin-bottom: 5rem !important;
+        }
+        .contact-content, .reseaux{
+            margin: 1rem auto !important;
+            width: 90% !important;
+            height: auto !important;
+            background-size: cover !important;
+            background-repeat: repeat !important;
+        }
+        .contact-content{
+            margin-top: 2rem !important;
+        }
+        
+        .inscription-container{
+            height: 90vh !important;
+            margin: 0 !important;
+        }
+        .inscription-title{
+            width: 100% !important;
+            font-size: 3.3rem !important;
+            margin-bottom: -2rem !important;
+        }
+        .inscription-content{
+            width: 90% !important;
+            margin:  0 auto;
+        }
+        .inscription-content h1{
+            font-size: 2rem !important;
+            margin-bottom: 3rem !important;
+        }
+        #user_lastname, #user_firstname, #user_email, #user_password, #email, #password, #form_email, #form_password {
+            width: 100% !important;
+            margin-bottom: 1rem !important;
+            height: 2.2rem !important;
+            font-size: 1.2rem !important;
+        }
+        .user-title{
+            font-size: 1.8rem !important;
+        }
+        .user-info, .user-devis{
+            width: 90% !important;
+            margin: 0 auto !important;
+            margin-bottom: 1rem !important;
+        }
+        .user-info h1{
+            font-size: 1.5rem !important;
+        }
+        .user-info p{
+            font-size: 1.2rem !important;
+            padding: 0 !important;
+        }
+        #user_newPassword{
+            width: 100% !important;
+        }
+        .devis-user-container{
+            padding-top: 2rem !important;
+        }
+        .content-devis-user{
+            width: 90% !important;
+            margin: 0 auto !important;
+            font-size: 1.1rem !important;
+            padding-bottom: 4.5rem !important;
+        }
+        .content-devis-user h1{
+            font-size: 1.5rem !important;
+        }
+        .content-devis-user p {
+            padding: 0 !important;
+        }
+        .separator2{
+            margin-top: .7rem !important;
+        }
+        .signature{
+            margin: 0 !important;
+            font-size: .9rem !important;
+        }
+        .msg-devis{
+            margin: 1rem 0 !important;
+            font-size: 2rem !important;
+        }
+        .admin-title{
+            font-size: 2rem !important ;
+            margin: -2rem !important;
+        }
+        .devis-admin{
+            width: 90% !important;
+        }
+        .devis-admin-btn{
+            margin-left: 18rem !important;
+        }
+        .logo-footer img {
+            width: 4rem !important;
+            margin-right: .5rem !important;
+        }
+        .mention_legale{
+        font-size: 1rem !important;
+        }
+        .mention-content{
+            height: auto !important;
             padding-bottom: 2rem !important;
         }
-
+        
+        
     }
+
 
 
 

@@ -9,7 +9,7 @@
 
 {% block body %}
     <div class="contain">
-        <h1 id="myText"data-label="Votre liste de devis à traiter: "></h1>
+        <h1 id="myText"data-label="Votre liste de devis à traiter: " class="admin-title"></h1>
         {% for devis in deviss %}
         <div class="devis-admin" id="div{{devis.id}}" >
             <a href="{{ path('devis_remove', {id: devis.id}) }}" class=" btn-primary devis-admin-btn" id="{{devis.id}}" onclick="clickDone('{{devis.id}}')"> ✔ </a>  

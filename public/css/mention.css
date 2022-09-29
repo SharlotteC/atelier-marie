@@ -1,5 +1,9 @@
 body{
     background: linear-gradient( #4d161656,#3a1a1a88), url(../images/bg-userRdv.jpg);
+    overflow: visible;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .mention-content{
     display: flex;

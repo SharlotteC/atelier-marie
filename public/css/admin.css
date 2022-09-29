@@ -1,6 +1,10 @@
 body {
     background: linear-gradient( #35000061,#35000088), url(../images/bg-rdv.jpg);
     overflow: visible;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto ;
 }
 .contain{
     flex-wrap: wrap;
@@ -28,7 +32,6 @@ h2{
     padding: 1rem;
     height: auto;
     box-shadow: var(--box-shadow);
-
 }
 a{
     color: var(--primary-dark);

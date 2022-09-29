@@ -4,6 +4,7 @@ body{
 .inscription-container{
     display: flex;
     flex-direction: row;
+    margin: auto 0;
 }
 .inscription-title{
     width: 50%;
@@ -11,17 +12,16 @@ body{
     color: var(--primary-color);
     text-align: center;
 }
-
 .inscription-content{
     background: var(--dark);
     width: 40%;
-    margin:  1.5rem auto;
+    margin:  1rem auto;
     text-align: center;
     padding: 1.5rem;
     color: var(--primary-color);
     box-shadow: var(--box-shadow);
+    height: auto;
 }
-
 .inscription-content label{
     display: none;
 }
@@ -44,7 +44,6 @@ body{
     box-shadow: var(--box-shadow);
 }
 .btn-inscription{
-
     width: 8rem;
     margin-top: 1rem;
     border: none;
@@ -73,7 +72,6 @@ body{
 .inscription-content a:hover{
     scale: 1.2;
     color: var(--primary-dark);
-
 }
 .check{
     display: unset !important ;

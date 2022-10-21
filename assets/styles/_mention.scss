@@ -1,0 +1,31 @@
+
+.mention-content{
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient( #4d161656,#3a1a1a88), url(../images/bg-userRdv.jpg);
+    overflow: visible;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mention_legale{
+    margin: 0 !important;
+    width: 60%;
+    padding: 1rem;
+    background: var(--dark);
+    font-size: 1.2rem;
+    box-shadow: var(--box-shadow);
+    height: 90vh;
+}
+.mention_legale p{
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+.mention-content h1 {
+    width: 30%;
+    font-size: 7rem;
+    text-align: center;
+    margin: 5rem auto;
+}

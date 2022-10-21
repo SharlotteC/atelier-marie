@@ -1,0 +1,109 @@
+@use './admin';
+@use './benefit';
+@use './contact';
+@use './devis';
+@use './footer';
+@use './header';
+@use './home_page';
+@use './mention';
+@use './signup';
+@use './user';
+@use './user_devis';
+@use './media';
+@use './reset-password';
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+/* ---------------------------------------theme----------------------------------------- */
+
+:root {
+    --primary-color:  #fdfafa;
+    --secondary-color: #060606;
+    --primary-dark: #835b5b;
+    --dark: rgba(0, 0, 0, 0.515);
+    --light: rgba(255, 255, 255, 0.14) ;
+    --warning: #8b0a0a;
+    --success: #009432;
+    --font-family: 'oswald', sans-serif;
+    --font-title: 'Cookie', sans-serif;
+    --font-1: 'Pacifico', sans-serif;
+    --box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    --box-shadow-2: rgba(5, 5, 5, 0.25) 0px 15px 60px -12px inset, rgba(8, 8, 8, 0.3) 0px 15px 60px -12px inset;
+    --border-radius: 3px;
+    --border: 3px solid  #fdfafa;;
+    --text-shadow: 2px 2px 2px black;
+}
+
+/* --------------------------------------reset------------------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+/* ----------------------------------------body----------------------------------------- */
+body {
+    color: var(--primary-color) !important;
+    font-family: var(--font-family);
+    max-height: 100vh;
+}
+/* ----------------------------------------btn------------------------------------------ */
+.btn-primary{
+    width: 11rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 3px;
+    padding: .7rem;
+    box-shadow: var(--box-shadow);
+    text-decoration: none;
+    transition: .5s;
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+}
+.btn-primary:hover{
+    color: var(--primary-dark);
+    transform: scale(1.2);
+}
+/* -------------------------------------message  flash -------------------------------*/
+.obg{
+    font-style: italic;
+}
+.flash{
+    padding: .5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.flash-success{
+    background-color: var(--primary-dark);
+    color: var(--primary-color);
+}
+.flash-error{
+    background: var(--dark);
+    color: var(--primary-color) ;
+    border: 3px solid var(--warning);
+}
+/* -------------------------------------separator--------------------------------- */
+.separator  {
+    width: 40rem;
+    height: 5px;
+    margin-top: 2rem;
+    border-top: var(--border) ;
+    margin-left: -82rem;
+}
+.separator2{
+    margin:  1rem auto;
+    width: 15rem;
+    border-top: var(--border);
+}
+.separator3{
+    margin:  0 auto;
+    width: 12rem;
+    border-top: var(--border);
+    padding:.3rem ;
+}
+h1{
+    background: transparent !important;
+}

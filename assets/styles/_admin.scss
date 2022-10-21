@@ -1,0 +1,62 @@
+.admin-content {
+    background: linear-gradient( #35000061,#35000088), url(../images/bg-rdv.jpg);
+    overflow: visible;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto ;
+    width: 100%;
+}
+.contain-admin{
+    width: 100%;  
+    padding-bottom: 4rem;
+    font-size: 1.2rem;
+    justify-content: space-around;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.contain-admin h1{
+    width: 100%;
+    font-size: 4rem;
+    margin: 2rem;
+    text-align: center;
+    background: var(--dark);
+    padding: 1rem;
+    
+}
+.contain-admin h2{
+    margin-bottom: 1rem;
+}
+.devis-admin{
+    width: 27rem;
+    background: var(--dark);
+    margin: 2rem;
+    padding: 1rem 1.9rem 1.9rem 1.9rem;
+    height: auto;
+    box-shadow: var(--box-shadow);
+}
+.devis-admin a{
+    margin-left: 1rem;
+    display: inline-block;
+    color: var(--primary-dark);
+    transition: .4s;
+    padding: 0;
+}
+.devis-admin a:hover{
+    color: var(--primary-color);
+    scale: 1.2;
+}
+.devis-admin-btn{
+    padding: 0;
+    text-decoration: none;
+    margin-left: 22rem !important;
+    // transition: .5s;
+    // font-family: var(--font-family);
+    font-size: 1.5rem;
+}
+.devis-admin p {
+    margin: 0;
+    padding: .8rem;
+}

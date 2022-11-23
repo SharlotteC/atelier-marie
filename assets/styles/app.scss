@@ -1,3 +1,4 @@
+
 @use './admin';
 @use './benefit';
 @use './contact';
@@ -16,7 +17,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 
-/* ---------------------------------------theme----------------------------------------- */
+/* -----------------------------theme--------------------------------- */
 
 :root {
     --primary-color:  #fdfafa;
@@ -36,21 +37,20 @@
     --text-shadow: 2px 2px 2px black;
 }
 
-/* --------------------------------------reset------------------------------------------ */
-
+/* ------------------------------reset-------------------------------- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-family);
 }
-/* ----------------------------------------body----------------------------------------- */
+/*--------------------------------body----------------------------------*/
 body {
     color: var(--primary-color) !important;
     font-family: var(--font-family);
     max-height: 100vh;
 }
-/* ----------------------------------------btn------------------------------------------ */
+/* ---------------------------------btn-------------------------------- */
 .btn-primary{
     width: 11rem;
     background-color: var(--secondary-color);
@@ -67,7 +67,7 @@ body {
     color: var(--primary-dark);
     transform: scale(1.2);
 }
-/* -------------------------------------message  flash -------------------------------*/
+/* ------------------------------message  flash -------------------------*/
 .obg{
     font-style: italic;
 }
@@ -85,7 +85,7 @@ body {
     color: var(--primary-color) ;
     border: 3px solid var(--warning);
 }
-/* -------------------------------------separator--------------------------------- */
+/* ------------------------------separator------------------------------ */
 .separator  {
     width: 40rem;
     height: 5px;
@@ -106,4 +106,8 @@ body {
 }
 h1{
     background: transparent !important;
+}
+
+#myText {
+    margin-top: 5rem;
 }

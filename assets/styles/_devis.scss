@@ -22,21 +22,24 @@
     display: none;
 }
 .form_devis{
+
     width: 45%;
     background: var(--dark);
     padding: 2rem;
     height: 90vh;
     align-items: center;
     box-shadow: var(--box-shadow);
+
 }
 .form_devis h1{
     font-size: 3rem;
     margin-bottom: 1.5rem;
 }
 .form-devis-content{
+    
     width: 100%;
-    height: 60vh;
-    margin: auto 0 ;
+    height: 63vh;
+    margin: 5rem 0 ;
 }
 .form_devis p{
     margin: 0;

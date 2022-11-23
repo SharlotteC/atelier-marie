@@ -7,12 +7,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: auto;
 }
 
 .mention_legale{
     margin: 0 !important;
     width: 60%;
-    padding: 1rem;
+    padding:5rem 2rem 2rem 2rem !important;
     background: var(--dark);
     font-size: 1.2rem;
     box-shadow: var(--box-shadow);

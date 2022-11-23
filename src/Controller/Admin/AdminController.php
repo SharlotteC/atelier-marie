@@ -17,18 +17,14 @@ class AdminController extends AbstractController
     #[Route('/admin', name: 'admin')]
     public function showDevis(DevisRepository $devisRepo ): Response
     {
-
-
         return $this->render('admin/admin.html.twig', [
             'deviss' => $devisRepo->findAll(),
         ]);
     }
-
     #[Route('/remove/{id}', name: 'devis_remove')]
     public function removeDevis( int $id, EntityManagerInterface $em, DevisRepository $devisRepo ): Response
     {
         $devis = $devisRepo->find($id);
-        dump($devis);
         
         $em->remove($devis);
         $em->flush();
@@ -36,7 +32,6 @@ class AdminController extends AbstractController
         return $this->render('admin/admin.html.twig', [
             'deviss' => $devisRepo->findAll(),
         ]);
-        
-
     }
 }
+    

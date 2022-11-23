@@ -62,6 +62,10 @@
     .devis_content h2{
         font-size: 4rem;
     }
+    // .form-devis-content{
+    //     display: flex !important;
+    //     flex-direction: row !important;
+    // }
     .form-devis-content h1{
         margin-top: 6rem !important;
         font-size: 3.5rem !important;
@@ -106,6 +110,9 @@
         font-size: 8rem !important;
     }
     .reset{
+        height: 87vh !important;
+    }
+    .devis-user-container{
         height: 87vh !important;
     }
 }
@@ -331,6 +338,7 @@
             padding: 2rem;
             height: auto !important;
         }
+
         .devis_content h2{
             margin-bottom: 5rem !important;
         }
@@ -483,11 +491,14 @@
         .card-img {
             margin-bottom: 3rem !important;
             height: 68vh !important;
-            }
-            .contain-devis{
-                flex-direction: column !important;
-                height: 100vh !important; 
-            }  
+        }
+        .contain-devis{
+            flex-direction: column !important;
+            height: 100vh !important; 
+        }
+        .form-devis-content{
+            margin-top: 0;
+        } 
         .devis_content{
             margin:  0 auto !important;
             width: 100% !important;
@@ -532,7 +543,7 @@
         }
         .contact-contain{
             flex-direction: column !important;
-            height: 146vh!important;
+            height: 155vh!important;
         }
         .contact-content, .reseaux{
             margin: 1rem auto !important;
@@ -542,7 +553,10 @@
             background-repeat: repeat !important;
         }
         .reseaux{
-            margin-bottom: 2rem !important;
+            margin-bottom: 10rem !important;
+        }
+        .reseaux img{
+            margin: 1.7rem !important;
         }
         .contact-content{
             margin-top: 2rem !important;
@@ -652,6 +666,9 @@
             width: 90% !important;
             margin: 2rem auto !important;
             padding: 1rem;
+        }
+        #myText{
+            margin: 0 !important;
         }
         
     }
